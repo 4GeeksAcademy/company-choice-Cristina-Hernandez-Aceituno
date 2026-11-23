@@ -1,9 +1,9 @@
 # Data Privacy & Compliance Rules
 
-**Scope:** All files handling personal data (candidates, employees, customers)  
-**Applies to:** Agents, skills, services, data pipelines  
-**Governance Baseline:** Data protection principles, audit trail requirements, Nexova operational constraints  
-**Legal Review:** Requires validation with Nexova legal/compliance team  
+**Scope:** All files handling personal data (candidates, employees, customers)
+**Applies to:** Agents, skills, services, data pipelines
+**Governance Baseline:** Data protection principles, audit trail requirements, Nexova operational constraints
+**Legal Review:** Requires validation with Nexova legal/compliance team
 **Last Updated:** 2026-11-19
 
 ---
@@ -23,7 +23,7 @@ This rule establishes data privacy principles, recommended practices, and audit 
 
 ### Rule 1: PII Masking in Agent Training & Logs
 
-**Scope:** All agent prompts, training data, logs, monitoring  
+**Scope:** All agent prompts, training data, logs, monitoring
 **Applies to:** Development sessions, skill examples, debugging outputs
 
 **Requirement:**
@@ -199,4 +199,3 @@ Before merging any PR that handles personal data:
 - **Source:** `memory-bank/techContext.md` Data Privacy & Compliance section
 - **Context:** BRIEFING.md (Nexova structure, departments handling personal data)
 - **Contacts:** Patricia Solís (HR), Sergio Molina (CTO) for data governance coordination
-

@@ -1,7 +1,7 @@
 # AGENTS.md - Nexova AI Engineering Workflow
 
-**Last Updated:** 2026-11-19  
-**AI Engineering Track — 4Geeks Academy**  
+**Last Updated:** 2026-11-19
+**AI Engineering Track — 4Geeks Academy**
 **Company:** Nexova Solutions
 
 ---
@@ -30,7 +30,7 @@ Every AI agent session working on Nexova must read these files in this order:
 | 4 | `BRIEFING.md` | Company source of truth: Nexova overview, all departments, problems, solutions | Authoritative source |
 | 5 | `AGENTS.md` | This file: agent development workflow, pre-commit steps, constraints | Development workflow |
 
-**Recommended reading order:** 1 → 4 → 2 → 3 → 5  
+**Recommended reading order:** 1 → 4 → 2 → 3 → 5
 **Time required:** ~20 minutes (first session); ~5 minutes (subsequent sessions to refresh)
 
 **Validation:** Agent confirms having read all files before beginning work on `uis/`, `services/`, `agents/`, or `.agents/skills/`.
@@ -200,7 +200,7 @@ Nexova has three main application areas. Each is documented in `uis/README.md` a
 
 #### `uis/backoffice` — Internal Operations Dashboard
 - **Purpose:** Admin interface for all Nexova operations
-- **Responsibilities:** 
+- **Responsibilities:**
   - Javier Almeida (Selection Operations): Candidate database, CV scoring, recruitment pipeline
   - Elena Vargas (Training): Course catalog, enrollments, attendance
   - Roberto Díaz (Support): Ticket dashboard, KB management, SLA monitoring
@@ -220,7 +220,7 @@ Nexova has three main application areas. Each is documented in `uis/README.md` a
 - **Purpose:** One unified backend for all Nexova applications (proposal for future state)
 - **Responsibility:** Sergio Molina (CTO) + AI Engineering team
 - **Current State:** No centralized API (HubSpot, Zendesk, custom ATS disconnected)
-- **Proposed Future Work:** 
+- **Proposed Future Work:**
   - Single entry point for all APIs
   - Routers per domain: `/recruitment`, `/training`, `/support`, `/hr`, `/sales`, `/telemetry`
   - Authentication & authorization
@@ -278,10 +278,10 @@ The following files will be created in subsequent phases. This section documents
 **Example: `nexova-cv-score` Skill (Proposed)**
 - **Objective:** Score a CV against a job profile (0-100 scale)
 - **Reusable by:** Recruitment agent, training recommendation engine, CLI scoring tool
-- **Inputs:** 
+- **Inputs:**
   - `cv_text` (resume content)
   - `job_profile` (required skills, experience, education)
-- **Outputs:** 
+- **Outputs:**
   - `score` (0-100)
   - `missing_skills` (list)
   - `evidence` (justification)

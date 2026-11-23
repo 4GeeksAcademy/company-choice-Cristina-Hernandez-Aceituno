@@ -1,6 +1,6 @@
 # Project Progress - Nexova Solutions
 
-**Last Updated:** 2026-11-19  
+**Last Updated:** 2026-11-19
 **AI Engineering Track — 4Geeks Academy**
 
 > **Important:** Milestone dates listed below are **proposed estimates** for this AI Engineering project, not official Nexova commitments. They are subject to validation with stakeholders and should be discussed with CEO Laura Mendoza and CTO Sergio Molina before being treated as project SLAs.

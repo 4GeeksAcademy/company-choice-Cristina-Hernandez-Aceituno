@@ -1,6 +1,6 @@
 # Project Brief - Nexova Solutions
 
-**Last Updated:** 2026-11-19  
+**Last Updated:** 2026-11-19
 **Status:** AI Engineering Project — Milestone 1 (Memory Bank & Agents Structure)
 
 ---

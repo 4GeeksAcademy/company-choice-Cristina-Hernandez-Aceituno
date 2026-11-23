@@ -1,6 +1,6 @@
 # Development Rules & Constraints — Nexova Solutions
 
-**Last Updated:** 2026-11-19  
+**Last Updated:** 2026-11-19
 **AI Engineering Track — 4Geeks Academy**
 
 ---
@@ -65,4 +65,3 @@ These rules ensure:
 | Version | Date | Change |
 |---------|------|--------|
 | 1.0 | 2026-11-19 | Initial rules set: memory-access, data-privacy, development, tool-usage |
-

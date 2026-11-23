@@ -1,7 +1,7 @@
 # Technical Context - Nexova Solutions
 
-**Last Updated:** 2026-11-19  
-**Version:** 1.0  
+**Last Updated:** 2026-11-19
+**Version:** 1.0
 **Audience:** AI Engineers, Agents, Backend Services
 
 ---

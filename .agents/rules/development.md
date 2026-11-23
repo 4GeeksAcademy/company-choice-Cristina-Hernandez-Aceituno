@@ -1,7 +1,7 @@
 # Development Rules
 
-**Scope:** Code contributed to `agents/`, `uis/`, `services/`, `data/`  
-**Applies to:** All development work, PRs, code reviews  
+**Scope:** Code contributed to `agents/`, `uis/`, `services/`, `data/`
+**Applies to:** All development work, PRs, code reviews
 **Last Updated:** 2026-11-19
 
 ---
@@ -184,17 +184,17 @@ def score_cv(candidate):
 ✓ AI-generated (approved):
 def score_cv(candidate: Candidato) -> CVScore:
     """Score candidate CV against job profile.
-    
+
     Uses semantic matching on skills + experience.
     Logs all decisions for audit trail (data-privacy.md Rule 3).
     """
     skills_match = semantic_similarity(candidate.skills, job_profile.required_skills)
     experience_match = experience_years_match(candidate, job_profile)
     score = weighted_average(skills_match * 0.6, experience_match * 0.4)
-    
+
     # Log audit trail
     log_cv_scoring(candidate_id=candidate.id, score=score)
-    
+
     return CVScore(score=score, evidence=f"Skills {skills_match:.2f}, Exp {experience_match:.2f}")
 ```
 
@@ -238,4 +238,3 @@ Before approving any PR in `agents/`, `uis/`, `services/`, `data/`:
 - **Context:** BRIEFING.md (organizational structure, department constraints)
 - **Workflow:** AGENTS.md (pre-commit Step 2-3, file protection rules)
 - **Safety:** data-privacy.md (compliance), memory-access.md (context usage)
-

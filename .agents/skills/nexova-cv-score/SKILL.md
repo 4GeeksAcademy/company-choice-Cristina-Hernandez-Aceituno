@@ -1,7 +1,7 @@
 # nexova-cv-score Skill
 
-**Last Updated:** 2026-11-19  
-**Owner:** Javier Almeida (Selection Operations)  
+**Last Updated:** 2026-11-19
+**Owner:** Javier Almeida (Selection Operations)
 **Purpose:** Reusable skill for scoring and evaluating candidate CVs against job opening requirements
 
 ---
@@ -36,8 +36,8 @@ This skill is **reusable across multiple contexts**:
 
 ### Input 1: Candidate CV
 
-**Field Name:** `cv_data`  
-**Type:** Object  
+**Field Name:** `cv_data`
+**Type:** Object
 **Required:** Yes
 
 ```json
@@ -65,8 +65,8 @@ This skill is **reusable across multiple contexts**:
 
 ### Input 2: Job Opening Requirements
 
-**Field Name:** `job_profile`  
-**Type:** Object  
+**Field Name:** `job_profile`
+**Type:** Object
 **Required:** Yes
 
 ```json
@@ -627,13 +627,13 @@ nexova-cv-score \
 
 ## Skill Status
 
-✅ **Documented:** Complete specification with inputs, process, outputs, criteria, example, limitations  
-✅ **Reusable:** Defined for multiple contexts (manual consultant, AI agent, training engine, CLI)  
-✅ **Verifiable:** Acceptance criteria with automated and manual checks  
-✅ **Data-Protected:** Aligns with data-privacy.md, audit trail, PII masking, access control  
+✅ **Documented:** Complete specification with inputs, process, outputs, criteria, example, limitations
+✅ **Reusable:** Defined for multiple contexts (manual consultant, AI agent, training engine, CLI)
+✅ **Verifiable:** Acceptance criteria with automated and manual checks
+✅ **Data-Protected:** Aligns with data-privacy.md, audit trail, PII masking, access control
 ⏳ **Implementation:** Pending Phase 5 (agent development)
 
 ---
 
-**Last Reviewed:** 2026-11-19  
+**Last Reviewed:** 2026-11-19
 **Next Review:** After implementation in Phase 5 (agent development)

@@ -1,7 +1,7 @@
 # Memory Access Rules
 
-**Scope:** `memory-bank/`, agents reading shared context, skills using company context  
-**Applies to:** All agents, skills, development sessions  
+**Scope:** `memory-bank/`, agents reading shared context, skills using company context
+**Applies to:** All agents, skills, development sessions
 **Last Updated:** 2026-11-19
 
 ---
@@ -114,4 +114,3 @@ The memory bank is the **single source of truth** for Nexova's business context,
 - **Source:** `memory-bank/projectbrief.md`, `memory-bank/techContext.md`, `memory-bank/progress.md`
 - **Workflow Context:** AGENTS.md Section 1 (Initial Reading List)
 - **Validation Context:** AGENTS.md Section 2 Step 1 (Verify Project Status)
-

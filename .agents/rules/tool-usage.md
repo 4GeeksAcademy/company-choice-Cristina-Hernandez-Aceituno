@@ -1,7 +1,7 @@
 # Tool Integration Guidelines
 
-**Scope:** Integration with external APIs and tools: HubSpot, Zendesk, Gmail, Google Workspace  
-**Applies to:** Agents, services, data pipelines accessing external systems  
+**Scope:** Integration with external APIs and tools: HubSpot, Zendesk, Gmail, Google Workspace
+**Applies to:** Agents, services, data pipelines accessing external systems
 **Last Updated:** 2026-11-19
 
 ---
@@ -23,9 +23,9 @@ Nexova's existing technology ecosystem spans multiple disconnected systems. This
 
 ### Rule 1: HubSpot Integration Guidance
 
-**Scope:** Services and agents reading/writing HubSpot data  
-**Tool:** HubSpot CRM API  
-**Applies to:** `services/api`, `agents/sales-agent`, `data/pipelines/`  
+**Scope:** Services and agents reading/writing HubSpot data
+**Tool:** HubSpot CRM API
+**Applies to:** `services/api`, `agents/sales-agent`, `data/pipelines/`
 **Status:** Integration documented in `memory-bank/techContext.md` Current Stack (40% adoption)
 
 **Recommended Access Patterns:**
@@ -62,8 +62,8 @@ Nexova's existing technology ecosystem spans multiple disconnected systems. This
 
 ### Rule 2: Zendesk Integration Guidance
 
-**Scope:** Support agents, services reading/writing Zendesk tickets  
-**Tool:** Zendesk API  
+**Scope:** Support agents, services reading/writing Zendesk tickets
+**Tool:** Zendesk API
 **Applies to:** `services/api`, `agents/support-agent`, `data/pipelines/`
 
 **Recommended Access Patterns:**
@@ -110,8 +110,8 @@ Nexova's existing technology ecosystem spans multiple disconnected systems. This
 
 ### Rule 3: Gmail Integration Guidance
 
-**Scope:** Agents sending candidate/client communications  
-**Tool:** Gmail API  
+**Scope:** Agents sending candidate/client communications
+**Tool:** Gmail API
 **Applies to:** `agents/recruitment-agent`, `agents/support-agent`, `services/email-service`
 
 **Recommended Access Patterns:**
@@ -163,8 +163,8 @@ Maintain template collection for common communications:
 
 ### Rule 4: Google Workspace Integration Guidance
 
-**Scope:** Services and agents reading/writing Google Docs, Sheets, Drive  
-**Tool:** Google Workspace API  
+**Scope:** Services and agents reading/writing Google Docs, Sheets, Drive
+**Tool:** Google Workspace API
 **Applies to:** `services/api`, `data/pipelines/`, automation flows
 
 **Recommended Access Patterns:**
@@ -269,4 +269,3 @@ Maintain template collection for common communications:
 - **Context:** BRIEFING.md (Roberto Díaz/Zendesk, Javier Almeida/HubSpot, Elena Vargas/Google Sheets)
 - **Safety:** data-privacy.md (PII masking, consent, audit trails)
 - **Workflow:** AGENTS.md (pre-commit Step 2, protected files)
-
