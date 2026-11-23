@@ -11,41 +11,42 @@
 
 ### ✅ Completed (Groundwork)
 
-| Task | Date | Owner | Notes |
-|------|------|-------|-------|
-| Company selection (Nexova) | 2026-11-06 | Cristina | Briefing created |
-| Repository structure setup | 2026-11-06 | Cristina | Monorepo folders initialized |
-| BRIEFING.md document | 2026-11-06 | 4Geeks | Full company context |
-| company-choice.md justification | 2026-11-06 | Cristina | Personal rationale |
+| Task                            | Date       | Owner    | Notes                        |
+| ------------------------------- | ---------- | -------- | ---------------------------- |
+| Company selection (Nexova)      | 2026-11-06 | Cristina | Briefing created             |
+| Repository structure setup      | 2026-11-06 | Cristina | Monorepo folders initialized |
+| BRIEFING.md document            | 2026-11-06 | 4Geeks   | Full company context         |
+| company-choice.md justification | 2026-11-06 | Cristina | Personal rationale           |
 
 ---
 
 ### 🔄 In Progress (Current Sprint)
 
-| Task | Milestone | Status | Expected | Owner |
-|------|-----------|--------|----------|-------|
-| Memory Bank structure | M1 (Agents Setup) | 🔄 | 2026-11-19 | Cristina |
-| `.agents/rules/` framework | M1 | Pending | 2026-11-20 | Cristina |
-| `.agents/skills/` (CV Scoring) | M1 | Pending | 2026-11-20 | Cristina |
-| `AGENTS.md` catalog | M1 | Pending | 2026-11-20 | Cristina |
+| Task                           | Milestone         | Status  | Expected   | Owner    |
+| ------------------------------ | ----------------- | ------- | ---------- | -------- |
+| Memory Bank structure          | M1 (Agents Setup) | 🔄      | 2026-11-19 | Cristina |
+| `.agents/rules/` framework     | M1                | Pending | 2026-11-20 | Cristina |
+| `.agents/skills/` (CV Scoring) | M1                | Pending | 2026-11-20 | Cristina |
+| `AGENTS.md` catalog            | M1                | Pending | 2026-11-20 | Cristina |
 
 ---
 
 ### ⏳ Planned (Next Phases)
 
-| Task | Milestone | Target Date | Owner | Notes |
-|------|-----------|-------------|-------|-------|
-| UIs documentation (`website`, `backoffice`) | M2 (Web) | 2026-12-15 | Cristina | Research phase |
-| Services API skeleton (`services/api`) | M2 (Backend) | 2026-12-20 | Cristina | FastAPI setup |
-| Data pipelines (`data/pipelines/`) | M3 (Data) | 2027-01-15 | Cristina | ETL/ELT workflows |
-| First AI Agent (Recruitment Agent) | M4 (Agents) | 2027-02-01 | Cristina | CV scoring + candidate matching |
-| Support Chatbot with RAG | M5 (RAG/Real-time) | 2027-03-01 | Cristina | Knowledge base + LLM |
+| Task                                        | Milestone          | Target Date | Owner    | Notes                           |
+| ------------------------------------------- | ------------------ | ----------- | -------- | ------------------------------- |
+| UIs documentation (`website`, `backoffice`) | M2 (Web)           | 2026-12-15  | Cristina | Research phase                  |
+| Services API skeleton (`services/api`)      | M2 (Backend)       | 2026-12-20  | Cristina | FastAPI setup                   |
+| Data pipelines (`data/pipelines/`)          | M3 (Data)          | 2027-01-15  | Cristina | ETL/ELT workflows               |
+| First AI Agent (Recruitment Agent)          | M4 (Agents)        | 2027-02-01  | Cristina | CV scoring + candidate matching |
+| Support Chatbot with RAG                    | M5 (RAG/Real-time) | 2027-03-01  | Cristina | Knowledge base + LLM            |
 
 ---
 
 ## Nexova-Specific Milestones
 
 ### Milestone 1: Memory Bank & Agent Infrastructure (Current)
+
 **Goal:** Establish shared context and agent development framework
 
 - [x] BRIEFING.md (company context)
@@ -63,6 +64,7 @@
 ---
 
 ### Milestone 2: Web & Services (Planned)
+
 **Goal:** Establish frontend and backend foundations
 
 - [ ] `uis/website/` — Public-facing corporate site
@@ -77,6 +79,7 @@
 ---
 
 ### Milestone 3: Data Pipelines (Planned)
+
 **Goal:** Ingest and process data from legacy systems
 
 - [ ] `data/pipelines/` — ETL jobs (HubSpot, Zendesk, custom ATS)
@@ -90,9 +93,11 @@
 ---
 
 ### Milestone 4: AI Agents (Planned)
+
 **Goal:** Deploy first production agents for core workflows
 
 #### 4a: Recruitment Agent
+
 - Skill: CV scoring (from `.agents/skills/nexova-cv-score/`)
 - Capability: Semantic search over candidate database
 - Input: Job opening + candidate pool
@@ -100,12 +105,14 @@
 - SLA: Response within 10 seconds
 
 #### 4b: HR Portal Agent
+
 - Capability: Answer employee questions (policies, benefits, leave)
 - Input: Employee question (NL)
 - Output: Answer + relevant docs
 - Integration: HR knowledge base + internal docs
 
 #### 4c: Training Recommender Agent
+
 - Capability: Recommend courses based on employee role/skills gap
 - Input: Employee profile + available courses
 - Output: Personalized learning path
@@ -116,9 +123,11 @@
 ---
 
 ### Milestone 5: Real-Time & RAG (Planned)
+
 **Goal:** Deploy support automation and knowledge systems
 
 #### 5a: Support Chatbot
+
 - Capability: First-line ticket resolution via RAG + LLM
 - Input: Customer question (chat, email)
 - Output: Resolution or escalation
@@ -126,6 +135,7 @@
 - SLA: Maintained within 24 hours
 
 #### 5b: Central Knowledge Base
+
 - Structure: Semantic search over Zendesk docs + internal wikis
 - Indexing: Weekly updates from support team
 - Quality: Automated checks for outdated/conflicting info
@@ -136,42 +146,45 @@
 
 ## Current Blockers & Notes
 
-| Blocker | Impact | Mitigation |
-|---------|--------|-----------|
-| Legacy ATS has no API | Can't directly access candidate data | Plan for CSV export + parsing |
-| HubSpot adoption only 40% | Sales data incomplete | Use as-is; focus on consistent subset |
-| No centralized logging | Hard to audit agent decisions | Implement structured logging in agents |
-| Support SLA at risk | Chatbot urgent | Prioritize support chatbot in M5 |
+| Blocker                   | Impact                               | Mitigation                             |
+| ------------------------- | ------------------------------------ | -------------------------------------- |
+| Legacy ATS has no API     | Can't directly access candidate data | Plan for CSV export + parsing          |
+| HubSpot adoption only 40% | Sales data incomplete                | Use as-is; focus on consistent subset  |
+| No centralized logging    | Hard to audit agent decisions        | Implement structured logging in agents |
+| Support SLA at risk       | Chatbot urgent                       | Prioritize support chatbot in M5       |
 
 ---
 
 ## Nexova Team Contacts (For Context/Questions)
 
-| Department | Head | Focus |
-|-----------|------|-------|
-| Selection Operations | Javier Almeida | CV scoring, recruitment workflows |
-| Corporate Training | Elena Vargas | Course recommendations, enrollment |
-| Outsourced Support | Roberto Díaz | Chatbot SLA, knowledge base |
-| Sales | Megan Clarke | CRM integration, pipeline |
-| Internal HR | Patricia Solís | HR portal, leave management |
-| Tech | Sergio Molina (CTO) | Legacy system access, infrastructure |
-| Executive | Laura Mendoza (CEO) | Strategic alignment, weekly reporting |
+| Department           | Head                | Focus                                 |
+| -------------------- | ------------------- | ------------------------------------- |
+| Selection Operations | Javier Almeida      | CV scoring, recruitment workflows     |
+| Corporate Training   | Elena Vargas        | Course recommendations, enrollment    |
+| Outsourced Support   | Roberto Díaz        | Chatbot SLA, knowledge base           |
+| Sales                | Megan Clarke        | CRM integration, pipeline             |
+| Internal HR          | Patricia Solís      | HR portal, leave management           |
+| Tech                 | Sergio Molina (CTO) | Legacy system access, infrastructure  |
+| Executive            | Laura Mendoza (CEO) | Strategic alignment, weekly reporting |
 
 ---
 
 ## Key Decisions Logged
 
 ### 1. Memory-First Approach
+
 - **Decision:** Establish shared memory bank (projectbrief, techContext, progress) before agents
 - **Rationale:** Prevents duplication, ensures consistency across agents
 - **Impact:** Slower initial setup, but faster agent development later
 
 ### 2. CV Scoring as First Skill
+
 - **Decision:** Narrow skill scope (CV scoring only, not full matching)
 - **Rationale:** Verifiable, reusable, unblocks recruitment agent
 - **Impact:** Skill ready by end of M1
 
 ### 3. RAG for Support as Priority
+
 - **Decision:** Support chatbot (Milestone 5) uses RAG over knowledge base
 - **Rationale:** High impact (40% automation target), hard SLA drivers action
 - **Impact:** Requires M3 (data pipelines) + semantic search setup
@@ -193,12 +206,13 @@
 ## Next Actions (For Approval/Review)
 
 1. ✅ Create Memory Bank files (projectbrief, techContext, progress)
-2. ⏳ Create AGENTS.md with agent catalog
-3. ⏳ Create `.agents/rules/` with development constraints
-4. ⏳ Create `.agents/skills/nexova-cv-score/` with SKILL.md
-5. ⏳ Commit all changes to `feature/agent-memory-bank`
-6. ⏳ Open PR to `main` for review
+2. ✅ Create AGENTS.md with agent workflow instructions
+3. ✅ Create `.agents/rules/` with scoped development constraints
+4. ✅ Create `.agents/skills/nexova-cv-score/` with SKILL.md
+5. ✅ Commit all changes to `feature/agent-memory-bank`
+6. ✅ Open Pull Request #1 to `main` for review
+7. ⏳ Await review and approval of Pull Request #1
 
 ---
 
-**Status:** Memory Bank creation in progress. Waiting for approval to continue with AGENTS.md, rules, and skills.
+**Status:** M1 documentation deliverables completed. Pull Request #1 opened for review. No application code implemented. Awaiting review and approval.
